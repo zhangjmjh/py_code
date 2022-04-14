@@ -1,0 +1,26 @@
+
+
+
+title: app手机号密码登陆
+url: /user/headlineLogin/phoneLogin
+method: post
+
+data:
+  verifyCode: "111111",
+  loginName: "17373110369",
+  inviteCode: ""
+
+header:
+  "content-type": "application/json",
+  "versionName": config.versionName(),
+  "sign": get_sign(data),
+  "systemType": "iOS",
+  "Authorization": '',
+  "timestamp": get_time(),
+  "devicetype": "iPhone Xs",
+  "deviceid": "jktt8C12D98DF14B449E9311A59CCC00BBF8",
+  "channel": "qd2021011202"
+
+resp:
+  'userName': '测试0255'
+  'status': 0
