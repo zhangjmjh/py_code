@@ -4,6 +4,7 @@ from SHEIN.config import config
 
 def comment_login():
     url = config.app() + "/user/common_login"
+    print(url)
 
     data = {
         "challenge": "1d6c7acce211d77af6616ff82cf83b2c",
@@ -32,8 +33,6 @@ def comment_login():
     #
     # token = response.json()['data']['token']
     # print(token)
-
-
 
     # global token
     Authorization = str(response.json()['info']['member']['token'])
